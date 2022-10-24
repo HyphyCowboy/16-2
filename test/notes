@@ -1,0 +1,18 @@
+
+polybius("thinkful"); //> "4432423352125413"
+polybius("Hello world"); //> '3251131343 2543241341'
+
+polybius("3251131343 2543241341", false); //> "hello world"
+polybius("4432423352125413", false); //> "th(i/j)nkful
+polybius("44324233521254134", false); //> false
+
+
+substitution("thinkful", "xoyqmcgrukswaflnthdjpzibev"); //> 'jrufscpw'
+substitution("You are an excellent spy", "xoyqmcgrukswaflnthdjpzibev"); //> 'elp xhm xf mbymwwmfj dne'
+substitution("jrufscpw", "xoyqmcgrukswaflnthdjpzibev", false); //> 'thinkful'
+
+substitution("message", "$wae&zrdxtfcygvuhbijnokmpl"); //> "y&ii$r&"
+substitution("y&ii$r&", "$wae&zrdxtfcygvuhbijnokmpl", false); //> "message"
+
+substitution("thinkful", "short"); //> false
+substitution("thinkful", "abcabcabcabcabcabcabcabcyz"); //> false
